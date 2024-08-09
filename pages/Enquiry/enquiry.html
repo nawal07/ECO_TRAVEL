@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/enquiry.css" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../../assets/js/main.js"></script>
+  </head>
+  <body>
+    <div class="container-main background-image">
+      <div class="navbar">
+        <div class="navbar-start">
+          <h2>ECO TRAVEL</h2>
+        </div>
+        <div class="navbar-end">
+          <a href="../../index.html">HOME</a>
+          <a href="../../pages/About/about.html">ABOUT</a>
+          <a href="../../pages/Services_/services.html">SERVICES</a>
+          <a href="../../pages/Destinations/destinations.html">DESTINATIONS</a>
+          <a href="./enquiry.html">ENQUIRY</a>
+          <a href="../../pages/Contact/contact.html">CONTACT</a>
+        </div>
+      </div>
+      <div class="enquiry-section">
+        <h1>ENQUIRY FORM</h1>
+        <h2>Get In Touch</h2>
+        <div class="form-container">
+          <form id="contactForm" onsubmit="return validateForm()">
+            <div>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+              <!-- </div>
+            <div> -->
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone"
+                required
+              />
+              <!-- </div>
+            <div> -->
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div>
+              <textarea
+                id="message"
+                name="message"
+                rows="10"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <button type="submit">SUBMIT</button>
+              <button type="reset" class="reset">RESET</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

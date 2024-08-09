@@ -1,0 +1,96 @@
+.background-image {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../assets/images/contact/contact.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.contact-details {
+  padding-top: 110px;
+  font-family: 'Kalam', cursive;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact-details h1 {
+  font-size: 36px;
+}
+
+.contact-details h2 {
+  padding-bottom: 30px;
+}
+
+.contact-details-main {
+  width: 65%;
+  height: 60vh;
+  margin: 0 auto;
+  padding-top: 40px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background-color: rgb(142, 181, 219);
+  font-family: 'Staatliches', sans-serif;
+  font-size: 20px;
+}
+
+.contact-details-head {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.contact-details-map {
+  background-image: url('../../assets/images/contact/map.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 48%;
+  height: 30vh;
+  border-radius: 20px;
+}
+
+.contact-details-first {
+  width: 30%;
+  border-radius: 40px;
+  text-align: justify;
+}
+
+.contact-details-first h4 {
+  font-family: 'Concert One', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.contact-details-first i {
+  font-size: 26px;
+}
+
+.contact-details-sub {
+  padding-top: 10px;
+  padding-left: 40px;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+.contact-details-tail {
+  width: 60%;
+  height: 40vh;
+}
+.contact-details-social {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-details-social i {
+  font-size: 24px;
+  padding-left: 10px;
+  color: black;
+}

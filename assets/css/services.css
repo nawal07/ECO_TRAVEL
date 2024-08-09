@@ -1,0 +1,83 @@
+.background-image {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../assets/images/services/services.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.service-section {
+  padding-top: 90px;
+  /* background-color: azure; */
+}
+.service-section h1 {
+  font-family: 'Kalam', cursive;
+  font-size: 36px;
+  text-align: center;
+}
+
+.service-section-head {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: 'Kalam', cursive;
+}
+
+.service-section-head h2 {
+  text-align: center;
+}
+
+.service-section-head h3 {
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.service-section-head li {
+  font-size: 16px;
+}
+
+.service-section-first,
+.service-section-second,
+.service-section-third,
+.service-section-fourth {
+  width: 23.5%;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 16px;
+  text-align: justify;
+  background-color: rgb(254, 245, 233, 0.6);
+}
+
+.service-section-first:hover,
+.service-section-second:hover,
+.service-section-third:hover,
+.service-section-fourth:hover {
+  box-shadow: 0 0 7px 7px rgb(142, 142, 142);
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.service-section-tail {
+  padding: 60px;
+}
+.service-section-tail h2 {
+  font-family: 'Kalam', cursive;
+  font-size: 36px;
+  text-align: center;
+}
+
+.service-section-tail h3 {
+  font-family: 'Kalam', cursive;
+  font-size: 26px;
+  text-align: center;
+}
+
+.service-section-testimonials {
+  width: 40%;
+  margin: 0 auto;
+  padding: 10px;
+}
