@@ -1,9 +1,11 @@
-.background-image {
+body {
   width: 100%;
   height: 100vh;
   background-image: url('../../assets/images/contact/contact.webp');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   z-index: 1;
 }
 
@@ -48,8 +50,9 @@
 
 .contact-details-map {
   background-image: url('../../assets/images/contact/map.webp');
-  background-size: contain;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 48%;
   height: 30vh;
   border-radius: 20px;
@@ -72,8 +75,7 @@
 }
 
 .contact-details-sub {
-  padding-top: 10px;
-  padding-left: 40px;
+  padding: 10px 40px;
   display: flex;
   align-items: start;
   gap: 10px;
@@ -93,4 +95,54 @@
   font-size: 24px;
   padding-left: 10px;
   color: black;
+}
+
+@media (max-width: 767px) {
+  .contact-details {
+    padding-top: 80px;
+    font-weight: 600;
+  }
+
+  .contact-details-main {
+    width: 90%;
+    height: 70vh;
+    margin: 0 auto;
+    padding-top: 0px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 16px;
+    gap: 20px;
+  }
+
+  .contact-details-head {
+    width: 100%;
+    height: 59vh;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .contact-details-map {
+    width: 100%;
+  }
+  .contact-details-first {
+    width: 100%;
+    border-radius: 40px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: 767px) and (max-width:1024px){
+  .contact-details-first {
+    padding-left: 70px;
+  }
+  .contact-details-main {
+    width: 90%;
+    height: 70vh;
+    margin: 0 auto;
+    padding-top: 0px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 16px;
+    gap: 20px;
+  }
 }

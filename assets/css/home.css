@@ -1,46 +1,82 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../assets/images/home/home.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.home-intro {
+  padding: 70px 20px;
+  position: relative;
+  top: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+}
 
-.background-image {
-    width: 100%;
-    height: 100vh;
-    background-image: url('../../assets/images/home/home.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
+.home-intro h1 {
+  font-family: 'Kalam', cursive;
+  font-weight: 700;
+  font-size: 54px;
+}
+
+.home-intro h2 {
+  font-family: 'Concert One', sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+.home-conclude h3 {
+  position: relative;
+  top: 240px;
+  font-family: 'Concert One', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: rgb(228 222 222);
+  text-align: center;
+}
+
+.home-conclude a {
+  color: rgb(255 227 106);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
   .home-intro {
-    padding: 70px;
-    position: relative;
-    top: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 50px;
+    flex-direction: column;
+    top: 90px;
+    padding: 10px;
+    gap: 70px;
   }
-  
+
   .home-intro h1 {
-    font-family: 'Kalam', cursive;
-    font-weight: 700;
-    font-size: 54px;
+    font-weight: 600;
+    font-size: 34px;
   }
-  
   .home-intro h2 {
     font-family: 'Concert One', sans-serif;
-    font-weight: 300;
-    font-size: 28px;
+    font-weight: 200;
+    font-size: 18px;
+    padding: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
   }
-  
+
   .home-conclude h3 {
-    position: relative;
-    top: 240px;
-    font-family: 'Concert One', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
+    top: 180px;
+    font-size: 18px;
     color: rgb(228 222 222);
     text-align: center;
   }
-  
-  .home-conclude a {
-    color: rgb(255 227 106);
-    text-decoration: none;
+}
+
+@media (min-width: 1023px) and (max-width: 1270px) {
+  .home-intro {
+    flex-direction: column;
+    top: 90px;
+    padding: 10px;
+    gap: 70px;
   }
-  
+}
