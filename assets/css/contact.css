@@ -1,7 +1,7 @@
 .background-image {
   width: 100%;
   height: 100vh;
-  background-image: url('../../assets/images/contact/contact.jpg');
+  background-image: url('../../assets/images/contact/contact.webp');
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
@@ -47,7 +47,7 @@
 }
 
 .contact-details-map {
-  background-image: url('../../assets/images/contact/map.jpg');
+  background-image: url('../../assets/images/contact/map.webp');
   background-size: contain;
   background-repeat: no-repeat;
   width: 48%;
