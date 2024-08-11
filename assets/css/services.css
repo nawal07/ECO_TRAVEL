@@ -1,7 +1,7 @@
 body {
   width: 100%;
   height: 100vh;
-  background-image: url('../../assets/images/services/services.webp');
+  /* background-image: url('../../assets/images/services/services.webp'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,7 +12,7 @@ body {
   padding-top: 90px;
 }
 .service-section h1 {
-  font-family: 'Kalam', cursive;
+  /* font-family: 'Kalam', cursive; */
   font-size: 36px;
   text-align: center;
 }
@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  font-family: 'Kalam', cursive;
+  /* font-family: 'Kalam', cursive; */
 }
 
 .service-section-head h2 {
@@ -67,7 +67,7 @@ body {
   margin: 20px auto;
   width: 70%;
   text-align: center;
-  font-family: 'Concert One', sans-serif;
+  /* font-family: 'Concert One', sans-serif; */
   font-weight: 100;
   border-radius: 30px;
 }
@@ -80,13 +80,13 @@ body {
   padding-bottom: 30px;
 }
 .service-section-tail h2 {
-  font-family: 'Kalam', cursive;
+  /* font-family: 'Kalam', cursive; */
   font-size: 36px;
   text-align: center;
 }
 
 .service-section-tail h3 {
-  font-family: 'Kalam', cursive;
+  /* font-family: 'Kalam', cursive; */
   font-size: 26px;
   text-align: center;
 }
@@ -125,7 +125,7 @@ body {
     width: 100%;
   }
   .service-section-testimonials {
-    width: 80%;
+    width: 80%; 
     margin: 0 auto;
     padding: 10px;
     background-color: rgba(68, 67, 67, 0.6);
