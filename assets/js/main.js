@@ -1,10 +1,7 @@
-const { message } = require("antd");
-
 function validateForm(event) {
+  event.preventDefault(); // Prevent the form from submitting and reloading the page
 
-  event.preventDefault();  // Prevent the form from submitting and reloading the page
-
-  const name = document.getElementById('name');
+  const userName = document.getElementById('name');
   const subject = document.getElementById('subject');
   const phone = document.getElementById('phone');
   const email = document.getElementById('email');
@@ -12,14 +9,14 @@ function validateForm(event) {
 
   let isValid = true;
 
-  clearError(name);
+  clearError(userName);
   clearError(subject);
   clearError(phone);
   clearError(email);
   clearError(message);
 
   // Validate each field and show error messages
-  if (name.value === '') {
+  if (userName.value === '') {
     showError(nameError, 'Name is required');
     isValid = false;
   }
@@ -70,24 +67,44 @@ function clearError(errorElement) {
 function showSuccessModal() {
   const modal = document.getElementById('successModal');
   const closeButton = document.getElementById('closeButton');
+  clearError(nameError);
+  clearError(subjectError);
+  clearError(phoneError);
+  clearError(emailError);
+  clearError(messageError);
 
   modal.style.display = 'block';
 
   closeButton.onclick = function () {
     modal.style.display = 'none';
+    resetForm();
+    console.log('Form fields cleared ');
   };
 
   window.onclick = function (event) {
     if (event.target === modal) {
       modal.style.display = 'none';
+      resetForm();
+      console.log('Form fields cleared ');
     }
   };
 }
 
 function resetForm() {
-  name.value === ''
-  subject.value === ''
-  phone.value === ''
-  email.value === ''
-  message.value === ''
+
+  const userName = document.getElementById('name');
+
+  userName.value = '';
+  subject.value = '';
+  phone.value = '';
+  email.value = '';
+  message.value = '';
+
+  clearError(nameError);
+  clearError(subjectError);
+  clearError(phoneError);
+  clearError(emailError);
+  clearError(messageError);
+
+  console.log('ResetForm executed');
 }
