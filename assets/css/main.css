@@ -54,9 +54,7 @@
     height: 70px;
     padding: 0px;
     display: flex;
-    /* align-items: flex-start; */
     flex-direction: column;
-    /* justify-content: space-between; */
   }
 
   .navbar-start h2 {
